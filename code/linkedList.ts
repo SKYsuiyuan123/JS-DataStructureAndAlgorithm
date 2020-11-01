@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 21:40:55
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-01 22:19:09
+ * @LastEditTime: 2020-11-01 23:02:20
  * @FilePath: \JS-DataStructureAndAlgorithm\code\linkedList.ts
  * @Description: 链表 -- 单项链表
  */
@@ -64,7 +64,7 @@ export class LinkedList<T> {
     this.length++;
   }
 
-  /** insert 向链表特定位置插入节点 */
+  /** insert 向链表中的特定位置插入节点 */
   insert(element: T, position: number) {
     // 1. 判断插入越界问题
     if (position < 0 || position > this.length) return false;
