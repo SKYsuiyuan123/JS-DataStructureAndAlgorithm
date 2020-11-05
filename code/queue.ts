@@ -2,12 +2,17 @@
  * @Author: sunpeiyuan
  * @Date: 2020-10-30 22:47:33
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-10-30 23:06:13
+ * @LastEditTime: 2020-11-05 21:27:49
  * @FilePath: \JS-DataStructureAndAlgorithm\code\queue.ts
  * @Description: 队列
  */
 
 /**
+ * 队列(Queue),它是一种受限的线性表，先进先出(FIFO First In First Out)
+ *  受限之处在于它只允许在表的前端(front)进行删除操作
+ *  而在表的后端(rear)进行插入操作
+ *
+ *
  * 队列，先进先出。
  *
  * JS 数组的第一项是 队列头，最后一项是 队列尾。
