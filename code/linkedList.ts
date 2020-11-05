@@ -2,12 +2,28 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 21:40:55
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-01 23:02:20
+ * @LastEditTime: 2020-11-05 21:43:56
  * @FilePath: \JS-DataStructureAndAlgorithm\code\linkedList.ts
  * @Description: 链表 -- 单项链表
  */
 
 /**
+ *
+ * 链表相对于数组的优缺点：
+ *
+ * 优点：
+ *  内存空间不是必须连续的，可以充分利用计算机的内存，实现灵活的内存动态管理。
+ *  链表不必再创建时就确定大小，并且大小可以无限的延伸下去。
+ *  链表在插入和删除数据时，时间复杂度可以达到 O(1)，相对数组效率高很多。
+ *
+ * 缺点：
+ *  链表访问任何一个位置的元素时，都需要从头开始访问。（无法跳过第一个元素访问任何一个元素）
+ *  无法通过下标直接访问元素，需要从头一个个访问，直到找到对应的元素。
+ *
+ */
+
+/**
+ *
  * 链表中的每一个节点都保留着下一个节点的位置引用（或者 null）使用(next)。
  * 链表尾的标志是：node.next = null
  *
@@ -163,6 +179,7 @@ export class LinkedList<T> {
       }
 
       // 此时 index === position
+      // current 没有引用指向它后，会被垃圾回收器自动回收。
       previous.next = current.next;
     }
 
@@ -178,7 +195,7 @@ export class LinkedList<T> {
     return this.removeAt(this.indexOf(element));
   }
 
-  /** updte 修改链表中某个位置的节点内容 */
+  /** update 修改链表中某个位置的节点内容 */
   update(element: T, position: number) {
     // 1. 删除 position 位置的节点
     this.removeAt(position);
