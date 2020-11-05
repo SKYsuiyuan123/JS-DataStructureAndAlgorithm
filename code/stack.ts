@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-10-30 22:20:27
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-10-30 22:44:37
+ * @LastEditTime: 2020-11-05 21:33:16
  * @FilePath: \JS-DataStructureAndAlgorithm\code\stack.ts
  * @Description: 栈
  */
@@ -11,6 +11,8 @@
  * 栈：
  *  栈是一种 先入后出/后进先出(LIFO)的数据结构。
  *  栈是一个基本的计算机数据结构，是高级编程语言的实现基础。
+ *
+ * 是一种受限的线性结构。
  *
  * 栈作用：在编程语言的编译器和内存中保存变量、方法的调用。
  *
