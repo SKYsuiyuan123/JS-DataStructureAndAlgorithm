@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 22:23:06
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-01 23:07:41
+ * @LastEditTime: 2020-11-05 21:51:14
  * @FilePath: \JS-DataStructureAndAlgorithm\code\doublyLinkList.ts
  * @Description: 链表 -- 双向链表
  */
@@ -96,7 +96,7 @@ export class DoublyLinkedList<T> extends LinkedList<T> {
     }
 
     /** 情况三：插入的位置位于链表的最后 */
-    if (position === this.length) {
+    if (position !== 0 && position === this.length) {
       const lastNode = this.tail;
 
       lastNode.next = newNode;
@@ -156,7 +156,7 @@ export class DoublyLinkedList<T> extends LinkedList<T> {
     }
 
     /** 情况二：删除链表中的最后一个节点 */
-    if (position === this.length - 1) {
+    if (position !== 0 && position === this.length - 1) {
       removeElement = this.tail;
 
       const lastNode = this.tail;
