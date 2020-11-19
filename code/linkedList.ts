@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 21:40:55
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-05 21:43:56
+ * @LastEditTime: 2020-11-19 22:24:45
  * @FilePath: \JS-DataStructureAndAlgorithm\code\linkedList.ts
  * @Description: 链表 -- 单项链表
  */
@@ -205,7 +205,7 @@ export class LinkedList<T> {
   }
 
   /** isEmpty 查看链表是否为空 */
-  inEmpty() {
+  isEmpty() {
     return this.length === 0;
   }
 

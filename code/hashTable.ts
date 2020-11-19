@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-17 22:44:05
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-19 22:08:11
+ * @LastEditTime: 2020-11-19 22:24:53
  * @Description: 字典
  */
 import { LinkedList } from "./linkedList";
@@ -226,7 +226,7 @@ export class HashTable_L<T> {
         // 查找到对象的 key 了
         this.table[position].remove(current.element /** Node */);
 
-        if (this.table[position].inEmpty()) {
+        if (this.table[position].isEmpty()) {
           this.table[position] = undefined;
         }
 
