@@ -2,15 +2,17 @@
  * @Author: sunpeiyuan
  * @Date: 2020-10-30 22:20:27
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-05 21:33:16
+ * @LastEditTime: 2020-11-26 20:53:45
  * @FilePath: \JS-DataStructureAndAlgorithm\code\stack.ts
  * @Description: 栈
  */
 
 /**
+ *
  * 栈：
  *  栈是一种 先入后出/后进先出(LIFO)的数据结构。
  *  栈是一个基本的计算机数据结构，是高级编程语言的实现基础。
+ *  其限制是仅允许在 表的一端 进行插入和删除运算。这一端被称为栈顶，相对的，把另一端称为栈底。
  *
  * 是一种受限的线性结构。
  *
@@ -28,6 +30,7 @@
  *  栈：每次操作都是从栈顶开始的，队列：栈顶进，栈底出。
  * 共同点：
  *  都是一根管子。
+ *
  *
  */
 

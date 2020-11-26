@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 22:23:06
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-05 22:04:40
+ * @LastEditTime: 2020-11-26 20:52:48
  * @FilePath: \JS-DataStructureAndAlgorithm\code\doublyLinkList.ts
  * @Description: 链表 -- 双向链表
  */
@@ -19,7 +19,9 @@ import { LinkedList } from "./linkedList";
  */
 
 /**
+ *
  * 链表（双向链表）节点
+ *
  * @class DoublyNode
  * @template T
  */
@@ -33,7 +35,9 @@ class DoublyNode<T> {
 }
 
 /**
+ *
  * 双向链表
+ *
  * @export
  * @class DoublyLinkedList
  * @extends {LinkedList<T>} 继承自 单向链表

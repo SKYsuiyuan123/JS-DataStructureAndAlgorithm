@@ -2,12 +2,13 @@
  * @Author: sunpeiyuan
  * @Date: 2020-10-30 22:47:33
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-05 21:27:49
+ * @LastEditTime: 2020-11-26 20:53:36
  * @FilePath: \JS-DataStructureAndAlgorithm\code\queue.ts
  * @Description: 队列
  */
 
 /**
+ *
  * 队列(Queue),它是一种受限的线性表，先进先出(FIFO First In First Out)
  *  受限之处在于它只允许在表的前端(front)进行删除操作
  *  而在表的后端(rear)进行插入操作
@@ -20,6 +21,7 @@
  *
  * 优先队列：
  *  例如：飞机上高级会员可以提前登机。
+ *
  *
  */
 
@@ -71,6 +73,7 @@ export class Queue<T> {
  * @template T
  */
 export class PriorityQueue<T> extends Queue<{ element: T; priority: number }> {
+  /** priorityEnqueue 按优先级进入队列 */
   priorityEnqueue(element: T, priority: number) {
     const queueItem = {
       element,

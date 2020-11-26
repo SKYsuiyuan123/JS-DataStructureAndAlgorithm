@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-11-01 21:40:55
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-19 22:24:45
+ * @LastEditTime: 2020-11-26 20:52:12
  * @FilePath: \JS-DataStructureAndAlgorithm\code\linkedList.ts
  * @Description: 链表 -- 单项链表
  */
@@ -35,7 +35,9 @@
  */
 
 /**
+ *
  * 链表（单向链表）节点
+ *
  * @class Node
  * @template T
  */
@@ -47,7 +49,9 @@ class Node<T> {
 }
 
 /**
+ *
  * 单向链表
+ *
  * @export
  * @class LinkedList
  * @template T
