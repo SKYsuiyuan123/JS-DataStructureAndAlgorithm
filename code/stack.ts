@@ -2,7 +2,7 @@
  * @Author: sunpeiyuan
  * @Date: 2020-10-30 22:20:27
  * @LastEditors: sunpeiyuan
- * @LastEditTime: 2020-11-26 20:53:45
+ * @LastEditTime: 2020-11-30 20:43:17
  * @FilePath: \JS-DataStructureAndAlgorithm\code\stack.ts
  * @Description: 栈
  */
@@ -80,7 +80,11 @@ export class Stack<T> {
 }
 
 /**
+ *
  * 十进制转二进制
+ *
+ * 进制转换算法：余数法
+ *
  * @export
  * @param {number} num
  * @returns {string} result
